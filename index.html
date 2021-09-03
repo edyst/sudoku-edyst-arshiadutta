@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<!-- Three Buttons -->
+<div class="main-div">
+    <div class="three-button">
+        <button class="change-btn" id="easy-btn1" onClick="changeLevel(1)">Easy</button>
+        <button class="change-btn" id="medium-btn2" onClick="changeLevel(2)">Medium</button>
+        <button class="change-btn" id="hard-btn3" onClick="changeLevel(3)">Hard</button>
+    </div>
+</div>
+<!-- Main section -->
+<div class="main-section">
+    <div id="sudoku-board"></div> 
+</div>
+<!-- Validate Section-->
+<div class="validate-section">
+    <button class="two-btn" onClick="validate()">Validate</button>
+    <br>
+    <button class="two-btn" onClick="reset()">Reset</button>
+</div>
+</body>
+</html>
